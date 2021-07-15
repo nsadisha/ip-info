@@ -3,7 +3,6 @@ const app = express()
 const router = express.Router()
 const ipl = require('ip-locator')
 const serverless = require('serverless-http')
-const port = 3000
 
 router.get('/', (req, res) => {
   var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress
@@ -18,9 +17,5 @@ router.get('/:ip', (req, res) => {
   })
 })
 
-app.use('.netlify/functions/index', router)
+app.use('/.netlify/functions/api', router)
 module.exports.handler = serverless(app)
-
-//app.listen(port, () => {
-//  console.log(`Example app listening at http://localhost:${port}`)
-//})
