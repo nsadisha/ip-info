@@ -2,14 +2,19 @@ const express = require('express')
 const app = express()
 const router = express.Router()
 const ipl = require('ip-locator')
+var ip = require('ip');
 const serverless = require('serverless-http')
 
 router.get('/', (req, res) => {
-  var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress
+  var myip = ip.address()
 
-  ipl.getDomainOrIPDetails(ip,'json', function (err, data) {
+  ipl.getDomainOrIPDetails(myip,'json', function (err, data) {
     res.json(data)
   })
+})
+router.get('/ip', (req, res) => {
+  var myip = ip.address()
+  res.json({"status": "success", "ip": ip})
 })
 router.get('/:ip', (req, res) => {
   ipl.getDomainOrIPDetails(req.params.ip,'json', function (err, data) {
