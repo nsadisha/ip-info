@@ -1,9 +1,6 @@
 const express = require('express')
 const app = express()
 const ipl = require('ip-locator')
-const cors = require('cors')
-
-app.use(cors())
 
 app.get('/',(req, res, next) => {
   var myip = req.headers['x-forwarded-for'] || req.connection.remoteAddress
