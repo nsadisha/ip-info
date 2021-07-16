@@ -1,4 +1,5 @@
 # ip-info
+[![](https://badges.aleen42.com/src/node.svg)]()
 [![](https://img.shields.io/badge/Licence-MIT-orange)]()
 [![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge)]()
 
@@ -133,7 +134,6 @@ npm install
 ```bash
 npm start
 ```
-<br>
 
 ## Contributing
 This project is open source and welcomes contributions.
