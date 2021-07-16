@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "An ExpressJs application to retrieve ip related details.",
   "main": "index.js",
-  "scripts": {
-    "start": "./node_modules/.bin/netlify-lambda serve src",
-    "build": "./node_modules/.bin/netlify-lambda build src"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nsadisha/ip-info.git"
@@ -19,9 +16,6 @@
   "homepage": "https://github.com/nsadisha/ip-info#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "ip": "^1.1.5",
-    "ip-locator": "0.0.1",
-    "netlify-lambda": "^2.0.11",
-    "serverless-http": "^2.7.0"
+    "ip-locator": "0.0.1"
   }
 }
