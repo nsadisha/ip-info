@@ -108,7 +108,7 @@ NOTE: Please note that this example contains a random ip.
 # Set up
 
 ### Requirements
-- [NodeJs](https://nodejs.org/en/)
+- [Node](https://nodejs.org/en/)
 
 ### Local development
 After the above requirements have been met:
