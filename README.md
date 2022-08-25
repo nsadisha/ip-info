@@ -18,7 +18,7 @@ This is a simple api made with `ExpressJs` which provides your ip information in
 
 #### Request
 ```
-https://ipfo.herokuapp.com/
+GET https://ipfo.herokuapp.com/
 ```
 #### Responce
 NOTE: Please note that this example contains a random ip.
@@ -44,7 +44,7 @@ NOTE: Please note that this example contains a random ip.
 
 #### Request
 ```
-https://ipfo.herokuapp.com/ip
+GET https://ipfo.herokuapp.com/ip
 ```
 #### Responce
 NOTE: Please note that this example contains a random ip.
@@ -59,7 +59,7 @@ NOTE: Please note that this example contains a random ip.
 
 #### Request(1)
 ```
-https://ipfo.herokuapp.com/189.69.89.5
+GET https://ipfo.herokuapp.com/189.69.89.5
 ```
 #### Responce(1)
 NOTE: Please note that this example contains a random ip.
@@ -83,7 +83,7 @@ NOTE: Please note that this example contains a random ip.
 ```
 #### Request(2)
 ```
-https://ipfo.herokuapp.com/apple.com
+GET https://ipfo.herokuapp.com/apple.com
 ```
 #### Responce(2)
 NOTE: Please note that this example contains a random ip.
